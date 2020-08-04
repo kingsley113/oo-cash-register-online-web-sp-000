@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :prev_total, :discount
 
-  def initialize(discount = false)
+  def initialize(discount = 0)
     @total = 0
     @discount = (discount % 100)
   end
